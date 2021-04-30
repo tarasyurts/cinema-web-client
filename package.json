@@ -1,0 +1,29 @@
+{
+  "name": "cinema-web-client",
+  "version": "0.0.1",
+  "description": "web client for cinema",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c-1",
+    "format": "prettier js css --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarasyurts/cinema-web-client.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "cinema"
+  ],
+  "author": "Taras Yurts",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tarasyurts/cinema-web-client/issues"
+  },
+  "homepage": "https://github.com/tarasyurts/cinema-web-client#readme",
+  "devDependencies": {
+    "http-server": "^0.12.3",
+    "prettier": "^2.2.1"
+  }
+}
