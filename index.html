@@ -3,31 +3,51 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>FilmetZZ Cinema</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/normalize.css" />
+  <link rel="stylesheet" href="/css/base.css" />
+  <title>FilmetZZ</title>
 </head>
 
-<body>
-<div class="heroes">
-
-  <div class="navbar">
-    <div class="brand">
-
+<body class="page">
+  <header class="header page__header container">
+    <div class="header__brand">
+      <a href="/index.html" class="header__brand-link">
+        <h3 class="header__brand-title">FilmetZZ</h3>
+      </a>
     </div>
-    <div class="navbar-buttons">
-      <button></button>
-      <button></button>
-      <button></button>
+    <nav class="header__nav">
+      <ul class="header__nav-list menu">
+        <li class="menu__item">
+          <a href="/index.html" class="menu__link menu__link--active">Головна</a>
+        </li>
+        <li class="menu__item">
+          <a href="/films.html" class="menu__link">Фільми</a>
+        </li>
+        <li class="menu__item">
+          <a href="/schedule.html" class="menu__link">Розклад</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__location">
+      <!-- <svg class="header__location-icon"></svg> -->
+      <object class="header__location-icon" data="/images/svg/placeholder.svg" type="image/svg+xml"></object>
+      <span class="header__location-city">Івано-Франківськ</span>
     </div>
-    <div class="location"></div>
-  </div>
-  <div class="slider">
+  </header>
+  <main class="page__content">
+    <div class="films-slider slider">
+      <div class="films-slider__image-wrapper">
+        <img src="/images/films/annecy_festival.png" alt="" class="films-slider__image">
+      </div>
+      <p class="films-slider__title">Annecy festival</p>
+      <button class="films-slider__button button button-light">Детальніше</button>
+    </div>
+  </main>
+  <footer class="footer page_footer">
 
-  </div>
-
-</div>
-
-<div class="footer"></div>
-
+  </footer>
 </body>
 
 </html>
