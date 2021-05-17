@@ -66,16 +66,21 @@ body{
   align-items: flex-end;
 }
 
-.header__brand-link{
+.brand-link{
   text-decoration: none;
   display: inline-block;
 }
 
-.header__brand-title{
+.brand-title{
   font-family: 'Montserrat';
   color: #AD77AA;
   font-size: 38px;
   margin: 0;
+}
+
+.brand-title--footer{
+  color: #fff;
+  font-size: 64px;
 }
 
 .header__nav{
@@ -99,6 +104,9 @@ body{
   background-color: #F1F1F1;
   color: #A5A4A4;
   text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .menu__link--active{
@@ -111,6 +119,9 @@ body{
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .header__location-icon{
@@ -119,6 +130,18 @@ body{
 
 .header__location-city{
   color: #AD77AA;
+}
+
+
+.footer{
+  background-color: #AD77AA;
+  height: 300px;
+}
+
+.footer__content{
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 @media (min-width: 1440px) {
