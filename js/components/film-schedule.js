@@ -8,7 +8,7 @@ export const filmShedule = (film, dayStart, dayEnd) => {
               <p class="sheduled-film--date">${dayInfo.date}</p>
               <div class="sheduled-film--times">
               ${dayInfo.movieShows.map(showInfo =>
-                `<a href="buy-ticket.html?showId=${showInfo.id}" class="sheduled-film--time">${showInfo.time}</a>`).join('')}
+                `<a href="buy-ticket.html?showId=${showInfo.id}" class="sheduled-film--time button button--yellow">${showInfo.time}</a>`).join('')}
               </div>
             </div>`
   }).join('')
