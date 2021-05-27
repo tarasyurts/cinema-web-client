@@ -5,9 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="/css/normalize.css" />
   <link rel="stylesheet" href="/css/base.css" />
-  <script type="module" src="/js/pages/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+  <script type="module" src="/js/pages/main.js" defer></script>
   <title>FilmetZZ</title>
 </head>
 <body class="page">
@@ -36,13 +39,115 @@
       <span class="header__location-city">Івано-Франківськ</span>
     </div>
   </header>
+
   <main class="page__content">
     <div class="films-slider slider">
-      <div class="films-slider__image-wrapper">
-        <img src="/images/films/annecy_festival.png" alt="" class="films-slider__image">
+      <div class="films-slider__item">
+        <div class="films-slider__background-image-wrapper">
+          <img src="/images/films/annecy_festival.png" alt="" class="films-slider__background-image">
+        </div>
+        <div class="films-slider__content container">
+          <div class="films-slider__text-content">
+            <p class="films-slider__title">Annecy festival</p>
+            <div class="films-slider__button-wrapper">
+              <button class="films-slider__button button button-light">Детальніше</button>
+            </div>
+          </div>
+          <div class="films-slider__image-wrapper">
+            <img src="/images/films/annecy_festival.png" alt="" class="films-slider__image">
+          </div>
+        </div>
       </div>
-      <p class="films-slider__title">Annecy festival</p>
-      <button class="films-slider__button button button-light">Детальніше</button>
+
+      <div class="films-slider__item">
+        <div class="films-slider__background-image-wrapper">
+          <img src="/images/films/kill_bill.jpg" alt="" class="films-slider__background-image">
+        </div>
+        <div class="films-slider__content container">
+          <div class="films-slider__text-content">
+            <p class="films-slider__title">Kill Bill</p>
+            <div class="films-slider__button-wrapper">
+              <button class="films-slider__button button button-light">Детальніше</button>
+            </div>
+          </div>
+          <div class="films-slider__image-wrapper">
+            <img src="/images/films/kill_bill.jpg" alt="" class="films-slider__image">
+          </div>
+        </div>
+      </div>
+
+      <div class="films-slider__item">
+        <div class="films-slider__background-image-wrapper">
+          <img src="/images/films/Moonlight.jpg" alt="" class="films-slider__background-image">
+        </div>
+        <div class="films-slider__content container">
+          <div class="films-slider__text-content">
+            <p class="films-slider__title">Moonlight</p>
+            <div class="films-slider__button-wrapper">
+              <button class="films-slider__button button button-light">Детальніше</button>
+            </div>
+          </div>
+          <div class="films-slider__image-wrapper">
+            <img src="/images/films/Moonlight.jpg" alt="" class="films-slider__image">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page__section container">
+      <p class="section-title">Сьогодні у кіно</p>
+      <div class="films-list">
+        <div class="films-list__item">
+          <a href="" class="films-list__link">
+            <img src="images/films/alien.jpg" alt="" class="films-list__image">
+          </a>
+        </div>
+        <div class="films-list__item">
+          <a href="" class="films-list__link">
+            <img src="images/films/ANATOMY OF A MURDER.jpg" alt="" class="films-list__image">
+          </a>
+        </div>
+        <div class="films-list__item">
+          <a href="" class="films-list__link">
+            <img src="images/films/annecy_festival.png" alt="" class="films-list__image">
+          </a>
+        </div>
+        <div class="films-list__item">
+          <a href="" class="films-list__link">
+            <img src="images/films/kill_bill.jpg" alt="" class="films-list__image">
+          </a>
+        </div>
+        <div class="films-list__item">
+          <a href="" class="films-list__link">
+            <img src="images/films/little-miss-sunshine.jpg" alt="" class="films-list__image">
+          </a>
+        </div>
+        <div class="films-list__item">
+          <a href="" class="films-list__link">
+            <img src="images/films/Moonlight.jpg" alt="" class="films-list__image">
+          </a>
+        </div>
+        <div class="films-list__item">
+          <a href="" class="films-list__link">
+            <img src="images/films/pulp_fiction.jpg" alt="" class="films-list__image">
+          </a>
+        </div>
+        <div class="films-list__item">
+          <a href="" class="films-list__link">
+            <img src="images/films/raiders_of_the_lost_ark.jpg" alt="" class="films-list__image">
+          </a>
+        </div>
+        <div class="films-list__item">
+          <a href="" class="films-list__link">
+            <img src="images/films/scarface.jpg" alt="" class="films-list__image">
+          </a>
+        </div><div class="films-list__item">
+          <a href="" class="films-list__link">
+            <img src="images/films/the-rocketeer.jpg" alt="" class="films-list__image">
+          </a>
+        </div>
+      </div>
+
     </div>
   </main>
   <footer class="footer page_footer">
