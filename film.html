@@ -8,7 +8,8 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="/css/normalize.css" />
   <link rel="stylesheet" href="/css/base.css" />
-  <script type="module" src="/js/pages/films.js" defer></script>
+  <link rel="stylesheet" href="/css/film-page.css" />
+  <script type="module" src="/js/pages/film.js" defer></script>
   <title>FilmetZZ</title>
 </head>
 <body class="page">
@@ -39,10 +40,45 @@
   </header>
 
   <main class="page__content">
+
+
     <div class="page__section container">
-      <p class="section-title">Афіша</p>
-      <div class="films-list"></div>
+
+      <div class="schedule-nav">
+        <button class="schedule-nav__link schedule-nav__today button button--yellow">
+          Сьогодні
+        </button>
+        <button class="schedule-nav__link schedule-nav__week button button--purple-stroke">
+          Тиждень
+        </button>
+        <button class="schedule-nav__link schedule-nav__month button button--purple-stroke">
+          Місяць
+        </button>
+      </div>
+      <div class="sheduled-films">
+        <div class="sheduled-film">
+          <div class="sheduled-film__image-wrapper">
+            <img src="images/films/annecy_festival.png" alt="" class="sheduled-film__image">
+          </div>
+          <div class="sheduled-film__info">
+            <p class="sheduled-film__title">ANNECY FESTIVAL</p>
+            <div class="sheduled-film--days_info">
+              <div class="sheduled-film--day day">
+                <p class="sheduled-film--date">1 травня</p>
+                <div class="sheduled-film--times">
+                  <a class="sheduled-film--time">12:30</a>
+                  <a class="sheduled-film--time">14:40</a>
+                  <a class="sheduled-film--time">16:20</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
+
+
   </main>
   <footer class="footer page_footer">
     <div class="footer__content container">

@@ -1,0 +1,123 @@
+
+.films-slider__background-image-wrapper{
+  min-height: 600px;
+  height: 80vh;
+
+  position:relative;
+  overflow:hidden;
+}
+
+.films-slider__background-image{
+  display: block;
+  width: 270%;
+  height: 150%;
+  object-fit: cover;
+
+  left:-70px;
+  right:-15px;
+  top:-230px;
+  bottom:-15px;
+  filter: blur(50px) brightness(1.05);
+  -webkit-filter: blur(50px) brightness(1.05);
+  -moz-filter: blur(50px) brightness(1.05);
+  -ms-filter: blur(50px) brightness(1.05);
+  -o-filter: blur(50px) brightness(1.05);
+  position: absolute;
+  z-index: 1;
+}
+
+.films-slider__content{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  position: absolute;
+  top: 55%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.films-slider__text-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.films-slider__title{
+  color: white;
+  margin: 0px;
+  margin-bottom: 24px;
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 4rem;
+  text-transform: uppercase;
+  opacity: 0.75;
+  text-align: center;
+}
+
+.films-slider__button{
+  padding: 12px 26px;
+  opacity: 0.75;
+  letter-spacing: 0.2rem;
+}
+
+.films-slider__image-wrapper{
+  width: 220px;
+}
+
+.films-slider__image{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+@media (min-width: 992px){
+  .films-slider__content{
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    top: 47%;
+  }
+
+  .films-slider__title{
+    font-size: 8rem;
+    line-height: 8rem;
+    text-align: start;
+  }
+
+  .films-slider__text-content{
+    align-items: flex-start;
+  }
+
+  .films-slider__image-wrapper{
+    width: 320px;
+  }
+
+  .films-slider__image{
+    margin-bottom: 0px;
+  }
+}
+
+
+@media (min-width: 1440px) {
+
+  .films-slider__background-image-wrapper{
+    height: 70vh;
+  }
+
+  .films-slider__background-image{
+    width: 170%;
+    left:-200px;
+    top:-140px;
+    filter: blur(120px) brightness(-1.05);
+    -webkit-filter: blur(120px) brightness(-1.05);
+    -moz-filter: blur(120px) brightness(-1.05);
+    -ms-filter: blur(120px) brightness(-1.05);
+    -o-filter: blur(120px) brightness(-1.05);
+  }
+}
