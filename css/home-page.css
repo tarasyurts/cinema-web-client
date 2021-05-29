@@ -49,6 +49,7 @@
 }
 
 .films-slider__title{
+  font-family: 'Montserrat';
   color: white;
   margin: 0px;
   margin-bottom: 24px;
@@ -68,6 +69,7 @@
 
 .films-slider__image-wrapper{
   width: 220px;
+  flex: 0 0 auto;
 }
 
 .films-slider__image{
@@ -85,8 +87,8 @@
   }
 
   .films-slider__title{
-    font-size: 8rem;
-    line-height: 8rem;
+    font-size: 6rem;
+    line-height: 6rem;
     text-align: start;
   }
 
@@ -95,7 +97,7 @@
   }
 
   .films-slider__image-wrapper{
-    width: 320px;
+    width: 360px;
   }
 
   .films-slider__image{
@@ -108,6 +110,11 @@
 
   .films-slider__background-image-wrapper{
     height: 70vh;
+  }
+
+  .films-slider__title{
+    font-size: 8rem;
+    line-height: 8rem;
   }
 
   .films-slider__background-image{

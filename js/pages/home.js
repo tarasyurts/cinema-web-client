@@ -14,7 +14,7 @@ function sliderInit(){
   });
 };
 
-document.querySelector('.films-slider').innerHTML =
+document.querySelector('.films-slider').innerHTML = 
 filmsIDAdvertisements.map(id => allFilms.find(film=> film.id === id))
 .map(film => {
   return `<div class="films-slider__item">
@@ -36,7 +36,7 @@ filmsIDAdvertisements.map(id => allFilms.find(film=> film.id === id))
 }).join("");
 sliderInit();
 
-document.querySelector('.films-list').innerHTML = filmsPosters(allFilms);
+document.querySelector('.films-list').replaceChildren(...filmsPosters(allFilms));
 
 
 

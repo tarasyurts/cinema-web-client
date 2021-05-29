@@ -11,7 +11,22 @@ document.querySelector('.sheduled-films').innerHTML =
 filmShedule ( currentFilm, new Date('05/20/2021'), new Date('05/20/2021')) ?? 'Нема даних('
 
 
-document.addEventListener('click', (event)=>{
+const scheduleNav = document.querySelector('.schedule-nav')
+
+scheduleNav.addEventListener('click', (event)=>{
+
+  if(event.target.classList.contains('schedule-nav__link')){
+    let buttons = Array.from(scheduleNav.children);
+    buttons.forEach(btn =>{
+      if(event.target == btn){
+        btn.classList.contains('button--purple-stroke') && btn.classList.replace('button--purple-stroke', 'button--yellow');
+        return;
+      }
+      btn.classList.contains('button--yellow') && btn.classList.replace('button--yellow', 'button--purple-stroke');
+    });
+  }
+
+
   if(event.target.classList.contains("schedule-nav__today")){
     document.querySelector('.sheduled-films').innerHTML =
     filmShedule ( currentFilm, new Date('05/20/2021'), new Date('05/20/2021')) ?? 'Нема даних('

@@ -1,0 +1,115 @@
+.schedule-section{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+.schedule-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-basis: 25%;
+}
+
+.sheduled-films{
+  flex-basis: 75%;
+}
+
+.sheduled-film{
+  display: flex;
+  background-color: var(--gray-ultra-light);
+}
+
+.schedule-nav__link{
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+
+
+.sheduled-film__image-wrapper{
+  display: none;
+  flex: 0 0 280px;
+  height: 100%;
+}
+
+.sheduled-film__image{
+  width: 100%;
+  height: 100%;
+}
+
+.sheduled-film__info{
+  padding: 28px 46px;
+}
+
+.sheduled-film__title{
+  font-family: 'Gilroy';
+  font-size: 3.4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--purple);
+  margin: 0 0 20px 0;
+}
+
+.sheduled-film--day{
+}
+
+.sheduled-film--date{
+
+  font-family: 'Gilroy';
+  color: var(--gray-ultra-light);
+  font-size: 2.4rem;
+  font-weight: 900;
+  line-height: .75;
+  margin: 0;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px var(--gray-light);
+}
+
+.sheduled-film--times{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.sheduled-film--time{
+  font-family: 'Gilroy';
+  width: 92px;
+  height: 38px;
+  margin-bottom: 20px;
+}
+
+.sheduled-film--time:not(:last-child){
+  margin-right: 24px;
+}
+
+@media (min-width: 576px){
+  .sheduled-film__image-wrapper{
+    display: block;
+  }
+  .sheduled-film__info{
+    flex-basis: 75%;
+  }
+}
+
+@media (min-width: 992px){
+
+  .schedule-section{
+    flex-direction: row;
+  }
+
+  .schedule-nav{
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-basis: 25%;
+  }
+
+
+  .sheduled-films{
+    flex-basis: 75%;
+  }
+
+}
