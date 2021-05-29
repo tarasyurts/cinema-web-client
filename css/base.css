@@ -162,7 +162,12 @@ body{
 
 .header{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.header__burger-button{
+  position: absolute;
+  left: 10px;
 }
 
 .burger-button{
@@ -201,14 +206,8 @@ body{
   transition: transform .15s ease,opacity .15s ease,-webkit-transform .15s ease;
 }
 
-.header__menu-icon{
-  width: 40px;
-  display: block;
-  cursor: pointer;
-}
 
 .header__brand{
-  flex-basis: 25%;
   display: flex;
   align-items: flex-end;
 }
@@ -329,9 +328,17 @@ body{
 
 @media (min-width: 992px){
 
+  .header{
+    justify-content: space-between;
+  }
+
   .page__header{
     margin-top: 40px;
     margin-bottom: 40px;
+  }
+
+  .header__brand{
+    flex-basis: 25%;
   }
 
   .brand-title{
