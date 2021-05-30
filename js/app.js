@@ -1,3 +1,6 @@
+export const STORAGE_KEY = 'TARAS_YURTS_CINEMA_APP_ORDERS_KEY'
+
+
 document.querySelector('#m-menu-btn').addEventListener('click', (e)=>{
   document.querySelector('.m-menu').classList.add('_is-shown');
 
@@ -8,8 +11,16 @@ document.querySelector('#m-menu-btn').addEventListener('click', (e)=>{
 
 document.addEventListener('click', (e)=>{
   if(e.target.classList.contains('m-menu-backdrop')){
-    document.querySelector('.m-menu').classList.remove('_is-shown');
-    e.target.parentNode.removeChild(e.target);
-    document.querySelector('body').classList.remove('no-scroll');
+    removeMobileMenu()
+    e.target.remove();
+  }
+  if(e.target.classList.contains('m-menu__cross-button')){
+    removeMobileMenu();
+    document.querySelector('.m-menu-backdrop').remove();
   }
 })
+
+const removeMobileMenu = () => {
+  document.querySelector('.m-menu').classList.remove('_is-shown');
+  document.querySelector('body').classList.remove('no-scroll');
+}

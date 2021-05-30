@@ -65,6 +65,7 @@ export const allFilms = [
             id: 0,
             hallId: 1,
             time: '14:00',
+            price: 120,
             orders: [{
               customer:{
                 name: 'Taras Yurts'
@@ -89,6 +90,7 @@ export const allFilms = [
             id: 1,
             hallId: 0,
             time: '17:20',
+            price: 140,
             orders: [{
               customer:{
                 name: 'Andrew Lulzov'
@@ -107,6 +109,7 @@ export const allFilms = [
             id: 2,
             hallId: 0,
             time: '19:40',
+            price: 100,
             orders: [{
               customer:{
                 name: 'Masha Kenza'
@@ -136,6 +139,7 @@ export const allFilms = [
             id: 3,
             hallId: 2,
             time: '15:40',
+            price: 130,
             orders: [{
               customer:{
                 name: 'Natasha Bebra'
@@ -160,6 +164,7 @@ export const allFilms = [
             id: 4,
             hallId: 1,
             time: '17:30',
+            price: 125,
             orders: [{
               customer:{
                 name: 'Andrew Lulzov'
@@ -195,6 +200,7 @@ export const allFilms = [
             id: 5,
             hallId: 1,
             time: '14:00',
+            price: 122,
             orders: [{
               customer:{
                 name: 'Taras Yurts'
@@ -219,6 +225,7 @@ export const allFilms = [
             id: 6,
             hallId: 0,
             time: '17:20',
+            price: 150,
             orders: [{
               customer:{
                 name: 'Andrew Lulzov'
@@ -237,6 +244,7 @@ export const allFilms = [
             id: 7,
             hallId: 0,
             time: '19:40',
+            price: 110,
             orders: [{
               customer:{
                 name: 'Masha Kenza'
@@ -254,6 +262,12 @@ export const allFilms = [
                 name: 'Masha Kenza'
               },
               place: {row: 1, seat:4}
+            },
+            {
+              customer:{
+                name: 'Nina Dills'
+              },
+              place: {row: 5, seat:6}
             }
           ]
           }
@@ -266,6 +280,7 @@ export const allFilms = [
             id: 8,
             hallId: 2,
             time: '15:40',
+            price: 111,
             orders: [{
               customer:{
                 name: 'Natasha Bebra'
@@ -290,6 +305,7 @@ export const allFilms = [
             id: 9,
             hallId: 1,
             time: '17:30',
+            price: 90,
             orders: [{
               customer:{
                 name: 'Andrew Lulzov'
@@ -324,6 +340,7 @@ export const allFilms = [
           {
             hallId: 1,
             time: '14:00',
+            price: 80,
             orders: [{
               customer:{
                 name: 'Taras Yurts'
@@ -347,6 +364,7 @@ export const allFilms = [
           {
             hallId: 0,
             time: '17:20',
+            price: 95,
             orders: [{
               customer:{
                 name: 'Andrew Lulzov'
@@ -364,6 +382,7 @@ export const allFilms = [
           {
             hallId: 0,
             time: '19:40',
+            price: 102,
             orders: [{
               customer:{
                 name: 'Masha Kenza'
@@ -392,6 +411,7 @@ export const allFilms = [
           {
             hallId: 2,
             time: '15:40',
+            price: 120,
             orders: [{
               customer:{
                 name: 'Natasha Bebra'
@@ -415,6 +435,7 @@ export const allFilms = [
           {
             hallId: 1,
             time: '17:30',
+            price: 124,
             orders: [{
               customer:{
                 name: 'Andrew Lulzov'
@@ -449,6 +470,7 @@ export const allFilms = [
           {
             hallId: 1,
             time: '14:00',
+            price: 104,
             orders: [{
               customer:{
                 name: 'Taras Yurts'
@@ -472,6 +494,7 @@ export const allFilms = [
           {
             hallId: 0,
             time: '17:20',
+            price: 100,
             orders: [{
               customer:{
                 name: 'Andrew Lulzov'
@@ -489,6 +512,7 @@ export const allFilms = [
           {
             hallId: 0,
             time: '19:40',
+            price: 95,
             orders: [{
               customer:{
                 name: 'Masha Kenza'
@@ -517,6 +541,7 @@ export const allFilms = [
           {
             hallId: 2,
             time: '15:40',
+            price: 100,
             orders: [{
               customer:{
                 name: 'Natasha Bebra'
@@ -540,6 +565,7 @@ export const allFilms = [
           {
             hallId: 1,
             time: '17:30',
+            price: 110,
             orders: [{
               customer:{
                 name: 'Andrew Lulzov'
@@ -574,6 +600,7 @@ export const allFilms = [
           {
             hallId: 1,
             time: '14:00',
+            price: 70,
             orders: [{
               customer:{
                 name: 'Taras Yurts'
@@ -597,6 +624,7 @@ export const allFilms = [
           {
             hallId: 0,
             time: '17:20',
+            price: 430,
             orders: [{
               customer:{
                 name: 'Andrew Lulzov'
@@ -614,6 +642,7 @@ export const allFilms = [
           {
             hallId: 0,
             time: '19:40',
+            price: 221,
             orders: [{
               customer:{
                 name: 'Masha Kenza'
@@ -642,6 +671,7 @@ export const allFilms = [
           {
             hallId: 2,
             time: '15:40',
+            price: 140,
             orders: [{
               customer:{
                 name: 'Natasha Bebra'
@@ -665,6 +695,7 @@ export const allFilms = [
           {
             hallId: 1,
             time: '17:30',
+            price: 130,
             orders: [{
               customer:{
                 name: 'Andrew Lulzov'
@@ -699,6 +730,7 @@ export const allFilms = [
           {
             hallId: 1,
             time: '14:00',
+            price: 210,
             orders: [{
               customer:{
                 name: 'Taras Yurts'
@@ -722,6 +754,7 @@ export const allFilms = [
           {
             hallId: 0,
             time: '17:20',
+            price: 230,
             orders: [{
               customer:{
                 name: 'Andrew Lulzov'
@@ -739,6 +772,7 @@ export const allFilms = [
           {
             hallId: 0,
             time: '19:40',
+            price: 520,
             orders: [{
               customer:{
                 name: 'Masha Kenza'

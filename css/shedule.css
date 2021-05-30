@@ -5,7 +5,6 @@
 
 
 
-
 .schedule-nav{
   display: flex;
   flex-direction: row;
@@ -52,10 +51,10 @@
   margin: 0 0 20px 0;
 }
 
-.sheduled-film--day{
+.sheduled-film__day{
 }
 
-.sheduled-film--date{
+.sheduled-film__date{
 
   font-family: 'Gilroy';
   color: var(--gray-ultra-light);
@@ -69,20 +68,20 @@
   -webkit-text-stroke: 1px var(--gray-light);
 }
 
-.sheduled-film--times{
+.sheduled-film__times{
   display: flex;
   flex-wrap: wrap;
 }
 
 
-.sheduled-film--time{
+.sheduled-film__time{
   font-family: 'Gilroy';
   width: 92px;
   height: 38px;
   margin-bottom: 20px;
 }
 
-.sheduled-film--time:not(:last-child){
+.sheduled-film__time:not(:last-child){
   margin-right: 24px;
 }
 
@@ -106,7 +105,6 @@
     justify-content: flex-start;
     flex-basis: 25%;
   }
-
 
   .sheduled-films{
     flex-basis: 75%;

@@ -26,7 +26,6 @@ scheduleNav.addEventListener('click', (event)=>{
     });
   }
 
-
   if(event.target.classList.contains("schedule-nav__today")){
     document.querySelector('.sheduled-films').innerHTML =
     filmShedule ( currentFilm, new Date('05/20/2021'), new Date('05/20/2021')) ?? 'Нема даних('
@@ -43,3 +42,33 @@ scheduleNav.addEventListener('click', (event)=>{
     return;
   }
 });
+
+
+document.querySelector('.about-section').innerHTML = `
+<div class="about-section__short-info about-subsection">
+  <div class="about-subsection__title">Про фільм</div>
+  <div class="about-subsection__data">
+    <div class="about-subsection__data-item about-item">
+      <div class="about-item__title text-bold">Рік</div>
+      <div class="about-item__value text-standart">${currentFilm.year}</div>
+    </div>
+    <div class="about-subsection__data-item about-item">
+      <div class="about-item__title text-bold">Виробник</div>
+      <div class="about-item__value text-standart">${currentFilm.provider}</div>
+    </div>
+    <div class="about-subsection__data-item about-item">
+      <div class="about-item__title text-bold">Жанр</div>
+      <div class="about-item__value text-standart">${currentFilm.genre}</div>
+    </div>
+    <div class="about-subsection__data-item about-item">
+      <div class="about-item__title text-bold">Тривалість</div>
+      <div class="about-item__value text-standart">${currentFilm.duration}</div>
+    </div>
+  </div>
+</div>
+<div class="about-section__long-info about-subsection">
+  <div class="about-subsection__title">Опис фільму</div>
+  <div class="about-subsection__data">
+    <p class="about-subsection__description text-standart">${currentFilm.description}</p>
+  </div>
+</div>`

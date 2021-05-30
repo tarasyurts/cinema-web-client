@@ -7,11 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/films-posters.css" />
-  <link rel="stylesheet" href="css/home-page.css" />
-  <link rel="stylesheet" href="css/mobile-menu.css" />
+  <link rel="stylesheet" href="/css/normalize.css" />
+  <link rel="stylesheet" href="/css/base.css" />
+  <link rel="stylesheet" href="/css/films-posters.css" />
+  <link rel="stylesheet" href="/css/mobile-menu.css" />
+  <link rel="stylesheet" href="/css/home-page.css" />
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
@@ -22,7 +22,7 @@
 </head>
 <body class="page">
   <header class="header page__header container">
-    <button class="header__burger-button burger-button" id="m-menu-btn">
+    <button class="header__burger-button m-header-button burger-button" id="m-menu-btn">
       <span class="burger-button__line"></span>
       <span class="burger-button__line"></span>
       <span class="burger-button__line"></span>
@@ -72,7 +72,31 @@
   </footer>
   <div class="m-menu">
     <div class="m-menu__wrapper">
-      content
+      <div class="m-menu__header">
+        <button class="m-menu__cross-button m-header-button cross-button" id="m-menu-btn">
+          <span class="cross-button__line"></span>
+          <span class="cross-button__line"></span>
+        </button>
+        <div class="m-menu__brand">
+          <a href="/index.html" class="brand-link">
+            <h3 class="brand-title">FilmetZZ</h3>
+          </a>
+        </div>
+      </div>
+      <nav class="m-menu__nav">
+        <ul class="m-menu__nav-list menu">
+          <li class="menu__item">
+            <a href="/index.html" class="menu__link">Головна</a>
+          </li>
+          <li class="menu__item">
+            <a href="/films.html" class="menu__link">Фільми</a>
+          </li>
+          <li class="menu__item">
+            <a href="/schedule.html" class="menu__link">Розклад</a>
+          </li>
+        </ul>
+      </nav>
+
     </div>
   </div>
 
